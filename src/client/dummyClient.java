@@ -228,18 +228,14 @@ public class dummyClient {
                 exit = false;
                 break;
             }
-            else if (Integer.parseInt(input)==1){
-                System.out.println("File 1 has been selected. Getting the file size.");
-                long size=inst.getFileSize(ip,port1,1);
-                System.out.println("File size is " + size);
-                inst.startDownload(ip,port1,1 ,size);
-            }
-            if (Integer.parseInt(input)==2){
-                System.out.println("File 2 has been selected. Getting the file size.");
-                long size=inst.getFileSize(ip,port1,2);
-                System.out.println("File size is " + size);
-                inst.startDownload(ip,port1,2 ,size);
-            }
+
+
+            System.out.println("File " + input + " has been selected. Getting the file size.");
+            int file_id = Integer.parseInt(input);
+            long size=inst.getFileSize(ip,port1,file_id);
+            System.out.println("File size is " + size);
+            inst.startDownload(ip,port1,file_id ,size);
+
         }
         System.out.println("The program is finished, good bye :)");
 	}
