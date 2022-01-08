@@ -1,4 +1,4 @@
-##How to Compile and Run
+## How to Compile and Run
 
 + First of all, Terminal must be started in Linux in Virtual Machine.
 + Then, The server must be initialized.
