@@ -226,6 +226,7 @@ public class dummyClient {
             input = sc.next();
             if (input.equalsIgnoreCase("x")){
                 exit = false;
+                break;
             }
             else if (Integer.parseInt(input)==1){
                 System.out.println("File 1 has been selected. Getting the file size.");
@@ -240,5 +241,6 @@ public class dummyClient {
                 inst.startDownload(ip,port1,2 ,size);
             }
         }
+        System.out.println("The program is finished, good bye :)");
 	}
 }
